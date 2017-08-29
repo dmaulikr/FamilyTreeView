@@ -59,7 +59,8 @@ The class `HeritageModel` defines person's information, and relations between th
     
     self.heritageView.model = father;
 ```
-An **efficient** way to parse JSON to HeritageModel is provide in Demo project: [Link]
+An **efficient** way to parse JSON to HeritageModel is provide in Demo project:   
+[Example data parsing](https://github.com/chenyun122/HeritageView/tree/master/HeritageViewDemo/ExampleData) 
 
 ### Customization
 A few public properties are provided to customize the person's view:
