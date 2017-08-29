@@ -1,7 +1,9 @@
 # HeritageView
 
 HeritageView is an Objective-C class that builds and displays a heritage tree.
-[Figure]
+<p align="center" >
+<img src="https://raw.githubusercontent.com/chenyun122/HeritageView/master/Screenshot.PNG" alt="HeritageView" title="HeritageView">
+</p>
 
 ## Installation
 ###  CocoaPods
