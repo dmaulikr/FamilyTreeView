@@ -70,7 +70,7 @@ A few public properties are provided to customize the person's view:
     self.heritageView.femaleBorderColor = UIColor.yellowColor;
     self.heritageView.maleBorderColor = UIColor.greenColor;
 ```
-Feel free to modify the source code to make it suitale for you. Alternatively, submit an issue to let me know what customization you need.
+Feel free to modify the source code to make it suitable for you. Alternatively, submit an issue to let me know what customization you need.
 
 ### Handling event
 The delegate implement follow method to handle event:
