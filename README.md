@@ -73,7 +73,7 @@ A few public properties are provided to customize the person's view:
 Feel free to modify the source code to make it suitable for you. Alternatively, submit an issue to let me know what customization you need.
 
 ### Handling event
-The delegate implement follow method to handle event:
+The delegate implements follow method to handle event:
 ```objective-c
 #pragma mark - Heritage View Delegate
 - (void)personDidClick:(HeritageModel *)model {
