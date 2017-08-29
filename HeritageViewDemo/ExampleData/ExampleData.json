@@ -1,0 +1,74 @@
+{
+    "personId": "81177667-d4de-4859-b4a9-dd63177e77c8",
+    "name": "Laurence Chavis",
+    "gender": 1,
+    "birthday": "1/25/1935",
+    "mates": [
+              {
+              "personId": "6ae54a46-9087-4863-a887-a53fa148a177",
+              "name": "Myra Richards",
+              "gender": 0,
+              "birthday": "2/12/1930",
+              "mates": null,
+              "children": [
+                           {
+                           "personId": "c030f044-9988-4349-b0a8-f361d13b1236",
+                           "name": "Larry Chavis",
+                           "gender": 1,
+                           "birthday": "5/22/1952",
+                           "mates": [
+                                     {
+                                     "personId": "4546537e-5cb7-4e0b-9fc0-af136e76258b",
+                                     "name": "Kristine Barnes",
+                                     "gender": 0,
+                                     "birthday": "3/2/1954",
+                                     "mates": null,
+                                     "children": [
+                                                  {
+                                                  "personId": "gb869379-4d46-4117-8f2b-8c9f6ce1a1f5",
+                                                  "name": "Clint Chavis",
+                                                  "gender": 1,
+                                                  "birthday": "3/15/1980",
+                                                  "mates": [],
+                                                  "Children": null
+                                                  },
+                                                  {
+                                                  "personId": "fb869379-4d46-4117-8f2b-8c9f6ce1a1f5",
+                                                  "name": "Stella Chavis",
+                                                  "gender": 0,
+                                                  "birthday": "3/10/1979",
+                                                  "mates": null
+                                                  }
+                                                  ]
+                                     }
+                                     ]
+                           },
+                           {
+                           "personId": "d030f044-9988-4349-b0a8-f361d13b1236",
+                           "name": "Alyssa Chavis",
+                           "gender": 0,
+                           "birthday": "7/3/1954",
+                           "mates": [
+                                     {
+                                     "personId": "def6537e-5cb7-4e0b-9fc0-af136e76258b",
+                                     "name": "Steve Cox",
+                                     "gender": 1,
+                                     "birthday": "6/27/1952",
+                                     "mates": null,
+                                     "children": [
+                                                  {
+                                                  "personId": "wfrs9379-4d46-4117-8f2b-8c9f6ce1a1f5",
+                                                  "name": "Diane Cox",
+                                                  "gender": 0,
+                                                  "birthday": "5/28/1982",
+                                                  "mates": [],
+                                                  "children": null
+                                                  }
+                                                  ]
+                                     }
+                                     ]
+                           }
+                           ]
+              }
+              ]
+}
