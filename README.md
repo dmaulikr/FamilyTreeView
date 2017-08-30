@@ -7,7 +7,15 @@ FamilyTreeView is an Objective-C class that builds and displays a family tree.
 
 ## Installation
 ###  CocoaPods
-Coming soon
+To integrate FamilyTreeView into your Xcode project using CocoaPods, specify it in your `Podfile`:
+```ruby
+platform :ios, '8.0'
+use_frameworks!
+
+target 'YourProjectName' do
+   pod ‘FamilyTreeView’, '~> 1.0’
+end
+```
 ###  Source files
 1.You could directly copy and add the folder `FamilyTreeView` to your project.   
 2.Include FamilyTreeView wherever you need it with `#import "FamilyTreeView.h"`
