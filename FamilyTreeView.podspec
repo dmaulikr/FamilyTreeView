@@ -11,6 +11,9 @@ Pod::Spec.new do |s|
   s.author             = { "Yun Chen" => "chenyun122@gmail.com" }
   s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/chenyun122/FamilyTreeView.git", :tag => "#{s.version}" }
-  s.source_files  = "FamilyTreeView", "FamilyTreeView/**/*.{h,m,xib}"
+  s.source_files  = "FamilyTreeView", "FamilyTreeView/**/*.{h,m}"
   s.resources = "FamilyTreeView/*.xcassets"
+  s.resource_bundles = {
+    'FamilyTreeView' => ['Pod/FamilyTreeView/**/*.xib']
+  }
 end
