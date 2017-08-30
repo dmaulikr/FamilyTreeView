@@ -13,6 +13,6 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/chenyun122/FamilyTreeView.git", :tag => "#{s.version}" }
   s.source_files  = "FamilyTreeView", "FamilyTreeView/**/*.{h,m}"
   s.resource_bundles = {
-    'FamilyTreeView' => ['Pod/FamilyTreeView/**/*.{xib,xcassets}']
+    'FamilyTreeView' => ['FamilyTreeView/**/*.{xib,xcassets}']
   }
 end
