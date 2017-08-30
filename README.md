@@ -2,7 +2,7 @@
 
 FamilyTreeView is an Objective-C class that builds and displays a family tree.
 <p align="center" >
-<img src="https://raw.githubusercontent.com/chenyun122/FamilyTreeView/master/Screenshot.PNG" alt="FamilyTreeView" title="FamilyTreeView">
+<img src="https://raw.githubusercontent.com/chenyun122/FamilyTreeView/master/Screenshot170830.PNG" alt="FamilyTreeView" title="FamilyTreeView">
 </p>
 
 ## Installation
