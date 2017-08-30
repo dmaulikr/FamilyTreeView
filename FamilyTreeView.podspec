@@ -8,8 +8,9 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/chenyun122/FamilyTreeView"
   s.screenshots  = "https://raw.githubusercontent.com/chenyun122/FamilyTreeView/master/Screenshot170830.PNG"
   s.license      = "MIT"
-  s.author             = { "Yun Chen" => "chenyun122@gmail.com" }
+  s.author       = { "Yun Chen" => "chenyun122@gmail.com" }
   s.platform     = :ios, "8.0"
+  s.requires_arc = true
   s.source       = { :git => "https://github.com/chenyun122/FamilyTreeView.git", :tag => "#{s.version}" }
   s.source_files  = "FamilyTreeView", "FamilyTreeView/**/*.{h,m}"
   s.resource_bundles = {

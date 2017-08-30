@@ -57,7 +57,7 @@ The class `PersonModel` defines person's information, and relations between the 
     mother.children = @[son];
     father.mates = @[mother];
     
-    self.familyTreeView.model = father;
+    familyTreeView.model = father;
 ```
 An **efficient** way to parse JSON to PersonModel is provide in Demo project:   
 [Example data parsing](https://github.com/chenyun122/FamilyTreeView/tree/master/FamilyTreeViewDemo/ExampleData) 

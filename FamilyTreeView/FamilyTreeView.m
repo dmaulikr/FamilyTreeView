@@ -218,7 +218,7 @@ static NSString *const kLineLayerName = @"kLineLayerName";
 }
 
 - (PersonView *)createPersonViewWithModel:(PersonModel *)model row:(NSInteger)row column:(NSInteger)column {
-    PersonView *personView = [[NSBundle mainBundle] loadNibNamed:@"PersonView" owner:self options:nil][0];
+    PersonView *personView = [PersonView newInstance];
     personView.frame = CGRectMake(column * (kCellWidth + kHorizontalMargin), kVerticalMargin, kCellWidth, kCellHeight);
     personView.model = model;
     personView.tag = row;

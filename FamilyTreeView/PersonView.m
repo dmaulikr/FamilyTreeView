@@ -182,4 +182,23 @@ static const CGFloat kLabelWidth = 108.0;
     }
 }
 
+
+#pragma mark - Static Functions
++ (PersonView *)newInstance {
+    if([[NSBundle mainBundle] pathForResource:@"PersonView" ofType:@"nib"] != nil)
+    {
+        return [[NSBundle mainBundle] loadNibNamed:@"PersonView" owner:self options:nil][0];
+    }
+    else{ //Load Xib from Pods bundle
+        NSBundle *podBundle = [NSBundle bundleForClass:PersonView.class];
+        NSURL *bundleURL = [podBundle URLForResource:@"FamilyTreeView" withExtension:@"bundle"];
+        if (bundleURL != nil) {
+            NSBundle *bundle = [[NSBundle alloc] initWithURL:bundleURL];
+            return [bundle loadNibNamed:@"PersonView" owner:self options:nil][0];
+        }
+        return nil;
+    }
+}
+
+
 @end

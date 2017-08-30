@@ -36,4 +36,6 @@
 @property (nonatomic, strong) UIColor *maleBorderColor;
 @property (nonatomic, strong) UIColor *femaleBorderColor;
 
++ (PersonView *)newInstance;
+
 @end
