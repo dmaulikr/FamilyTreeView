@@ -16,7 +16,7 @@ target 'YourProjectName' do
    pod ‘FamilyTreeView’, '~> 1.0’
 end
 ```
-###  Source files
+###  Using source files directly
 1.You could directly copy and add the folder `FamilyTreeView` to your project.   
 2.Include FamilyTreeView wherever you need it with `#import "FamilyTreeView.h"`
 
