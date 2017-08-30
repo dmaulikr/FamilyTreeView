@@ -23,15 +23,13 @@ static const CGFloat kHalfVerticalMargin = kVerticalMargin / 2.0;
 
 static const CGFloat kCornerRadius = 8.0;
 static const CGFloat kCornerDiameter = kCornerRadius * 2.0;
-
 static const CGFloat kQuarterAngle = M_PI * 3.0 / 2.0;
 
 static NSString *const kLineLayerName = @"kLineLayerName";
 
 
 #pragma mark - Init
-- (instancetype)initWithCoder:(NSCoder *)coder
-{
+- (instancetype)initWithCoder:(NSCoder *)coder{
     self = [super initWithCoder:coder];
     if (self) {
         [self setup];
@@ -39,8 +37,7 @@ static NSString *const kLineLayerName = @"kLineLayerName";
     return self;
 }
 
-- (instancetype)initWithFrame:(CGRect)frame
-{
+- (instancetype)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     if (self) {
         [self setup];
@@ -187,7 +184,7 @@ static NSString *const kLineLayerName = @"kLineLayerName";
     PersonView *personView = [self createPersonViewWithModel:model row:row column:column];
     personView.mateLinkId = model.personId;
     personView.isMate = NO;
-        
+    
     for (int i=0; i<model.mates.count; i++) {
         PersonModel *partnerModel = model.mates[i];
         PersonView *partnerPersonView = [self createPartnersViewWithModel:partnerModel row:row];
@@ -197,7 +194,7 @@ static NSString *const kLineLayerName = @"kLineLayerName";
             partnerPersonView.isOriginalMate = YES;
         }
     }
-
+    
     return personView;
 }
 
@@ -442,7 +439,7 @@ static NSString *const kLineLayerName = @"kLineLayerName";
                         nextPoint = CGPointMake(childCenterX, nextPoint.y);
                         [self drawLineAndMoveTo:nextPoint path:path];
                     }
- 
+                    
                     nextPoint = CGPointMake(childCenterX,childPersonViewOrigin.y);
                     [self drawLineAndMoveTo:nextPoint path:path];
                 }
@@ -479,7 +476,7 @@ static NSString *const kLineLayerName = @"kLineLayerName";
             }
         }
     }
-
+    
     if (containerView.frame.size.width < self.frame.size.width) {
         CGFloat insetHorizontal = (self.frame.size.width - containerView.frame.size.width) / 2.0;
         mainScrollView.contentInset = UIEdgeInsetsMake(mainScrollView.contentInset.top, insetHorizontal, mainScrollView.contentInset.bottom, insetHorizontal);

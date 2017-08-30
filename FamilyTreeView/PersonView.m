@@ -165,7 +165,7 @@ static const CGFloat kLabelWidth = 108.0;
     CGImageRef croppedCGImage = CGImageCreateWithImageInRect(image.CGImage, cropRect);
     UIImage *croppedImage =  [UIImage imageWithCGImage:croppedCGImage];
     CGImageRelease(croppedCGImage);
-
+    
     UIGraphicsBeginImageContextWithOptions(imageSize, NO, 1.0);
     CGRect bounds = CGRectMake(0, 0, imageSize.width, imageSize.height);
     [[UIBezierPath bezierPathWithRoundedRect:bounds cornerRadius:imageSize.width / 2.0] addClip];
