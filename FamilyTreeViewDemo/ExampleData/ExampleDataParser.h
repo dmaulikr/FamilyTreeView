@@ -1,16 +1,16 @@
 //
 //  TestDataParser.h
-//  HeritageViewDemo
+//  FamilyTreeViewDemo
 //
 //  Created by ChenYun on 2017/7/27.
 //  Copyright © 2017 ChenYun. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import "HeritageModel.h"
+#import "PersonModel.h"
 
 @interface ExampleDataParser : NSObject
 
-+ (HeritageModel *)getExampleData;
++ (PersonModel *)getExampleData;
 
 @end

@@ -1,13 +1,13 @@
 //
 //  PersonView.h
-//  HeritageView
+//  FamilyTreeView
 //
 //  Created by Yun Chen on 2017/7/29.
 //  Copyright © 2017 ChenYun. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import "HeritageModel.h"
+#import "PersonModel.h"
 
 
 @class PersonView;
@@ -21,7 +21,7 @@
 @interface PersonView : UIView
 
 @property (nonatomic) CGFloat zoomScale;
-@property (nonatomic, strong) HeritageModel *model;
+@property (nonatomic, strong) PersonModel *model;
 
 @property (nonatomic, assign) BOOL isMate;
 @property (nonatomic, assign) BOOL isOriginalMate;

@@ -1,6 +1,6 @@
 //
 //  AppDelegate.h
-//  HeritageViewDemo
+//  FamilyTreeViewDemo
 //
 //  Created by ChenYun on 2017/7/25.
 //  Copyright © 2017 ChenYun. All rights reserved.

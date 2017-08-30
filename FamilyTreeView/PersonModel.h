@@ -1,6 +1,6 @@
 //
-//  HeritageModel.h
-//  HeritageView
+//  PersonModel.h
+//  FamilyTreeView
 //
 //  Created by ChenYun on 2017/7/25.
 //  Copyright © 2017 ChenYun. All rights reserved.
@@ -15,14 +15,14 @@ typedef enum Gender: NSInteger {
 } Gender;
 
 
-@interface HeritageModel : NSObject
+@interface PersonModel : NSObject
 
 @property(nonatomic,copy) NSString *personId;
 @property(nonatomic,assign) Gender gender;
 @property(nonatomic,copy) NSString *name;
 @property(nonatomic,copy) NSString *birthday;
 @property(nonatomic,copy) NSString *portraitUrl;
-@property(nonatomic,copy) NSArray<HeritageModel *> *mates;
-@property(nonatomic,copy) NSArray<HeritageModel *> *children; //Make children belong to a mate. A single parent is not supported yet.
+@property(nonatomic,copy) NSArray<PersonModel *> *mates;
+@property(nonatomic,copy) NSArray<PersonModel *> *children; //Make children belong to a mate. A single parent is not supported yet.
 
 @end

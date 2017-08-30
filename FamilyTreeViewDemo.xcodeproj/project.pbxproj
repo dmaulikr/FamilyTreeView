@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		945EF6AD1F4D5C67006570EF /* HeritageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 945EF6A61F4D5C67006570EF /* HeritageModel.m */; };
-		945EF6AE1F4D5C67006570EF /* HeritageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 945EF6A81F4D5C67006570EF /* HeritageView.m */; };
-		945EF6AF1F4D5C67006570EF /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 945EF6A91F4D5C67006570EF /* Media.xcassets */; };
-		945EF6B01F4D5C67006570EF /* PersonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 945EF6AB1F4D5C67006570EF /* PersonView.m */; };
-		945EF6B11F4D5C67006570EF /* PersonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 945EF6AC1F4D5C67006570EF /* PersonView.xib */; };
+		9458656D1F56890A00BB3E75 /* FamilyTreeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 945865661F56890A00BB3E75 /* FamilyTreeView.m */; };
+		9458656E1F56890A00BB3E75 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 945865671F56890A00BB3E75 /* Media.xcassets */; };
+		9458656F1F56890A00BB3E75 /* PersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 945865691F56890A00BB3E75 /* PersonModel.m */; };
+		945865701F56890A00BB3E75 /* PersonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9458656B1F56890A00BB3E75 /* PersonView.m */; };
+		945865711F56890A00BB3E75 /* PersonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9458656C1F56890A00BB3E75 /* PersonView.xib */; };
 		9E4724021F3F648A00F53F1F /* ExampleData.json in Resources */ = {isa = PBXBuildFile; fileRef = 9E4723FF1F3F648A00F53F1F /* ExampleData.json */; };
 		9E4724031F3F648A00F53F1F /* ExampleDataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E4724011F3F648A00F53F1F /* ExampleDataParser.m */; };
 		9E81BB781F277C0300D81CC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E81BB771F277C0300D81CC4 /* main.m */; };
@@ -25,18 +25,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		945EF6A51F4D5C67006570EF /* HeritageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeritageModel.h; sourceTree = "<group>"; };
-		945EF6A61F4D5C67006570EF /* HeritageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeritageModel.m; sourceTree = "<group>"; };
-		945EF6A71F4D5C67006570EF /* HeritageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeritageView.h; sourceTree = "<group>"; };
-		945EF6A81F4D5C67006570EF /* HeritageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeritageView.m; sourceTree = "<group>"; };
-		945EF6A91F4D5C67006570EF /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
-		945EF6AA1F4D5C67006570EF /* PersonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonView.h; sourceTree = "<group>"; };
-		945EF6AB1F4D5C67006570EF /* PersonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonView.m; sourceTree = "<group>"; };
-		945EF6AC1F4D5C67006570EF /* PersonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonView.xib; sourceTree = "<group>"; };
+		945865651F56890A00BB3E75 /* FamilyTreeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FamilyTreeView.h; sourceTree = "<group>"; };
+		945865661F56890A00BB3E75 /* FamilyTreeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FamilyTreeView.m; sourceTree = "<group>"; };
+		945865671F56890A00BB3E75 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		945865681F56890A00BB3E75 /* PersonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonModel.h; sourceTree = "<group>"; };
+		945865691F56890A00BB3E75 /* PersonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonModel.m; sourceTree = "<group>"; };
+		9458656A1F56890A00BB3E75 /* PersonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonView.h; sourceTree = "<group>"; };
+		9458656B1F56890A00BB3E75 /* PersonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonView.m; sourceTree = "<group>"; };
+		9458656C1F56890A00BB3E75 /* PersonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonView.xib; sourceTree = "<group>"; };
 		9E4723FF1F3F648A00F53F1F /* ExampleData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ExampleData.json; sourceTree = "<group>"; };
 		9E4724001F3F648A00F53F1F /* ExampleDataParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleDataParser.h; sourceTree = "<group>"; };
 		9E4724011F3F648A00F53F1F /* ExampleDataParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleDataParser.m; sourceTree = "<group>"; };
-		9E81BB731F277C0300D81CC4 /* HeritageViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeritageViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E81BB731F277C0300D81CC4 /* FamilyTreeViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FamilyTreeViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E81BB771F277C0300D81CC4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9E81BB791F277C0300D81CC4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9E81BB7A1F277C0300D81CC4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -64,19 +64,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		945EF6A41F4D5C67006570EF /* HeritageView */ = {
+		945865641F56890A00BB3E75 /* FamilyTreeView */ = {
 			isa = PBXGroup;
 			children = (
-				945EF6A51F4D5C67006570EF /* HeritageModel.h */,
-				945EF6A61F4D5C67006570EF /* HeritageModel.m */,
-				945EF6A71F4D5C67006570EF /* HeritageView.h */,
-				945EF6A81F4D5C67006570EF /* HeritageView.m */,
-				945EF6A91F4D5C67006570EF /* Media.xcassets */,
-				945EF6AA1F4D5C67006570EF /* PersonView.h */,
-				945EF6AB1F4D5C67006570EF /* PersonView.m */,
-				945EF6AC1F4D5C67006570EF /* PersonView.xib */,
+				945865651F56890A00BB3E75 /* FamilyTreeView.h */,
+				945865661F56890A00BB3E75 /* FamilyTreeView.m */,
+				945865671F56890A00BB3E75 /* Media.xcassets */,
+				945865681F56890A00BB3E75 /* PersonModel.h */,
+				945865691F56890A00BB3E75 /* PersonModel.m */,
+				9458656A1F56890A00BB3E75 /* PersonView.h */,
+				9458656B1F56890A00BB3E75 /* PersonView.m */,
+				9458656C1F56890A00BB3E75 /* PersonView.xib */,
 			);
-			path = HeritageView;
+			path = FamilyTreeView;
 			sourceTree = SOURCE_ROOT;
 		};
 		9E4723FE1F3F648A00F53F1F /* ExampleData */ = {
@@ -92,7 +92,7 @@
 		9E81BB6A1F277C0300D81CC4 = {
 			isa = PBXGroup;
 			children = (
-				9E81BB751F277C0300D81CC4 /* HeritageViewDemo */,
+				9E81BB751F277C0300D81CC4 /* FamilyTreeViewDemo */,
 				9E81BB741F277C0300D81CC4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -100,12 +100,12 @@
 		9E81BB741F277C0300D81CC4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9E81BB731F277C0300D81CC4 /* HeritageViewDemo.app */,
+				9E81BB731F277C0300D81CC4 /* FamilyTreeViewDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9E81BB751F277C0300D81CC4 /* HeritageViewDemo */ = {
+		9E81BB751F277C0300D81CC4 /* FamilyTreeViewDemo */ = {
 			isa = PBXGroup;
 			children = (
 				9E81BB791F277C0300D81CC4 /* AppDelegate.h */,
@@ -116,12 +116,12 @@
 				9E81BB821F277C0300D81CC4 /* Assets.xcassets */,
 				9E81BB841F277C0300D81CC4 /* LaunchScreen.storyboard */,
 				9E81BB871F277C0300D81CC4 /* Info.plist */,
+				945865641F56890A00BB3E75 /* FamilyTreeView */,
 				9E4723FE1F3F648A00F53F1F /* ExampleData */,
-				945EF6A41F4D5C67006570EF /* HeritageView */,
 				9ED1BE1E1F2A3DD6007EFDCF /* SDKs */,
 				9E81BB761F277C0300D81CC4 /* Supporting Files */,
 			);
-			path = HeritageViewDemo;
+			path = FamilyTreeViewDemo;
 			sourceTree = "<group>";
 		};
 		9E81BB761F277C0300D81CC4 /* Supporting Files */ = {
@@ -155,9 +155,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9E81BB721F277C0300D81CC4 /* HeritageViewDemo */ = {
+		9E81BB721F277C0300D81CC4 /* FamilyTreeViewDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9E81BB8A1F277C0300D81CC4 /* Build configuration list for PBXNativeTarget "HeritageViewDemo" */;
+			buildConfigurationList = 9E81BB8A1F277C0300D81CC4 /* Build configuration list for PBXNativeTarget "FamilyTreeViewDemo" */;
 			buildPhases = (
 				9E81BB6F1F277C0300D81CC4 /* Sources */,
 				9E81BB701F277C0300D81CC4 /* Frameworks */,
@@ -167,9 +167,9 @@
 			);
 			dependencies = (
 			);
-			name = HeritageViewDemo;
+			name = FamilyTreeViewDemo;
 			productName = HeritageViewDemo;
-			productReference = 9E81BB731F277C0300D81CC4 /* HeritageViewDemo.app */;
+			productReference = 9E81BB731F277C0300D81CC4 /* FamilyTreeViewDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -188,7 +188,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9E81BB6E1F277C0300D81CC4 /* Build configuration list for PBXProject "HeritageViewDemo" */;
+			buildConfigurationList = 9E81BB6E1F277C0300D81CC4 /* Build configuration list for PBXProject "FamilyTreeViewDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -201,7 +201,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9E81BB721F277C0300D81CC4 /* HeritageViewDemo */,
+				9E81BB721F277C0300D81CC4 /* FamilyTreeViewDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -211,8 +211,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				945EF6AF1F4D5C67006570EF /* Media.xcassets in Resources */,
-				945EF6B11F4D5C67006570EF /* PersonView.xib in Resources */,
+				9458656E1F56890A00BB3E75 /* Media.xcassets in Resources */,
+				945865711F56890A00BB3E75 /* PersonView.xib in Resources */,
 				9E81BB861F277C0300D81CC4 /* LaunchScreen.storyboard in Resources */,
 				9E81BB831F277C0300D81CC4 /* Assets.xcassets in Resources */,
 				9E4724021F3F648A00F53F1F /* ExampleData.json in Resources */,
@@ -227,14 +227,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9458656F1F56890A00BB3E75 /* PersonModel.m in Sources */,
 				9E81BB7E1F277C0300D81CC4 /* ViewController.m in Sources */,
 				9ED1BE251F2A3DD6007EFDCF /* NSObject+YYModel.m in Sources */,
 				9E81BB7B1F277C0300D81CC4 /* AppDelegate.m in Sources */,
-				945EF6AD1F4D5C67006570EF /* HeritageModel.m in Sources */,
 				9ED1BE261F2A3DD6007EFDCF /* YYClassInfo.m in Sources */,
-				945EF6AE1F4D5C67006570EF /* HeritageView.m in Sources */,
-				945EF6B01F4D5C67006570EF /* PersonView.m in Sources */,
 				9E4724031F3F648A00F53F1F /* ExampleDataParser.m in Sources */,
+				945865701F56890A00BB3E75 /* PersonView.m in Sources */,
+				9458656D1F56890A00BB3E75 /* FamilyTreeView.m in Sources */,
 				9E81BB781F277C0300D81CC4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,10 +356,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4TCW3KT5AU;
-				INFOPLIST_FILE = HeritageViewDemo/Info.plist;
+				INFOPLIST_FILE = FamilyTreeViewDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.chenyun.HeritageViewDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chenyun.FamilyTreeViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -369,10 +369,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4TCW3KT5AU;
-				INFOPLIST_FILE = HeritageViewDemo/Info.plist;
+				INFOPLIST_FILE = FamilyTreeViewDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.chenyun.HeritageViewDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chenyun.FamilyTreeViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -380,7 +380,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9E81BB6E1F277C0300D81CC4 /* Build configuration list for PBXProject "HeritageViewDemo" */ = {
+		9E81BB6E1F277C0300D81CC4 /* Build configuration list for PBXProject "FamilyTreeViewDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9E81BB881F277C0300D81CC4 /* Debug */,
@@ -389,7 +389,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9E81BB8A1F277C0300D81CC4 /* Build configuration list for PBXNativeTarget "HeritageViewDemo" */ = {
+		9E81BB8A1F277C0300D81CC4 /* Build configuration list for PBXNativeTarget "FamilyTreeViewDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9E81BB8B1F277C0300D81CC4 /* Debug */,

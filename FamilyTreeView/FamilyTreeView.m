@@ -1,15 +1,15 @@
 //
-//  HeritageView.m
-//  HeritageView
+//  FamilyTreeView.m
+//  FamilyTreeView
 //
 //  Created by ChenYun on 2017/7/25.
 //  Copyright © 2017 ChenYun. All rights reserved.
 //
 
-#import "HeritageView.h"
+#import "FamilyTreeView.h"
 
 
-@implementation HeritageView
+@implementation FamilyTreeView
 
 static const CGFloat kCellWidth = 113.0;
 static const CGFloat kCellHeight = 54.0;
@@ -87,7 +87,7 @@ static NSString *const kLineLayerName = @"kLineLayerName";
 
 
 #pragma mark - Properties
-- (void)setModel:(HeritageModel *)model {
+- (void)setModel:(PersonModel *)model {
     _model = model;
     
     if (lastColumnsInRow == nil) {
@@ -182,14 +182,14 @@ static NSString *const kLineLayerName = @"kLineLayerName";
     }
 }
 
-- (PersonView *)createSelfViewWithModel:(HeritageModel *)model row:(NSInteger)row {
+- (PersonView *)createSelfViewWithModel:(PersonModel *)model row:(NSInteger)row {
     NSInteger column = [self getAndIncreaseLastColumnWithRow:row];
     PersonView *personView = [self createPersonViewWithModel:model row:row column:column];
     personView.mateLinkId = model.personId;
     personView.isMate = NO;
         
     for (int i=0; i<model.mates.count; i++) {
-        HeritageModel *partnerModel = model.mates[i];
+        PersonModel *partnerModel = model.mates[i];
         PersonView *partnerPersonView = [self createPartnersViewWithModel:partnerModel row:row];
         partnerPersonView.mateLinkId = model.personId;
         partnerPersonView.isMate = YES;
@@ -201,13 +201,13 @@ static NSString *const kLineLayerName = @"kLineLayerName";
     return personView;
 }
 
-- (PersonView *)createPartnersViewWithModel:(HeritageModel *)model row:(NSInteger)row {
+- (PersonView *)createPartnersViewWithModel:(PersonModel *)model row:(NSInteger)row {
     NSInteger column = [self getAndIncreaseLastColumnWithRow:row];
     PersonView *personView = [self createPersonViewWithModel:model row:row column:column];
     personView.childLinkId = model.personId;
     
     for (int i=0; i<model.children.count; i++) {
-        HeritageModel *childModel = model.children[i];
+        PersonModel *childModel = model.children[i];
         PersonView *childPersonView = [self createSelfViewWithModel:childModel row:row + 1];
         childPersonView.childLinkId = model.personId;
         childPersonView.isFirstChild = (i == 0 ? YES : NO);
@@ -217,7 +217,7 @@ static NSString *const kLineLayerName = @"kLineLayerName";
     return personView;
 }
 
-- (PersonView *)createPersonViewWithModel:(HeritageModel *)model row:(NSInteger)row column:(NSInteger)column {
+- (PersonView *)createPersonViewWithModel:(PersonModel *)model row:(NSInteger)row column:(NSInteger)column {
     PersonView *personView = [[NSBundle mainBundle] loadNibNamed:@"PersonView" owner:self options:nil][0];
     personView.frame = CGRectMake(column * (kCellWidth + kHorizontalMargin), kVerticalMargin, kCellWidth, kCellHeight);
     personView.model = model;

@@ -1,6 +1,6 @@
 //
 //  TestDataParser.m
-//  HeritageViewDemo
+//  FamilyTreeViewDemo
 //
 //  Created by ChenYun on 2017/7/27.
 //  Copyright © 2017 ChenYun. All rights reserved.
@@ -12,12 +12,12 @@
 
 @implementation ExampleDataParser
 
-+ (HeritageModel *)getExampleData {
++ (PersonModel *)getExampleData {
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"ExampleData" ofType:@"json"];
     NSData *data = [NSData dataWithContentsOfFile:filePath];
     NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
     
-    HeritageModel *model = [HeritageModel yy_modelWithJSON:json];
+    PersonModel *model = [PersonModel yy_modelWithJSON:json];
     return model;
 }
 

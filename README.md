@@ -1,54 +1,54 @@
-# HeritageView
+# FamilyTreeView
 
-HeritageView is an Objective-C class that builds and displays a heritage tree.
+FamilyTreeView is an Objective-C class that builds and displays a family tree.
 <p align="center" >
-<img src="https://raw.githubusercontent.com/chenyun122/HeritageView/master/Screenshot.PNG" alt="HeritageView" title="HeritageView">
+<img src="https://raw.githubusercontent.com/chenyun122/FamilyTreeView/master/Screenshot.PNG" alt="FamilyTreeView" title="FamilyTreeView">
 </p>
 
 ## Installation
 ###  CocoaPods
 Coming soon
 ###  Source files
-1.You could directly copy and add the folder `HeritageView` to your project.   
-2.Include HeritageView wherever you need it with `#import "HeritageView.h"`
+1.You could directly copy and add the folder `FamilyTreeView` to your project.   
+2.Include FamilyTreeView wherever you need it with `#import "FamilyTreeView.h"`
 
 ## Usage
-### Major steps
+### Major process
 ```objective-c
-    HeritageView *heritageView = [[HeritageView alloc] initWithFrame:self.view.bounds];
-    heritageView.delegate = self;   //set self as the delegate if it needs to receive click event
-    [self.view addSubview:heritageView];
+    FamilyTreeView *familyTreeView = [[FamilyTreeView alloc] initWithFrame:self.view.bounds];
+    familyTreeView.delegate = self;   //set self as the delegate if it needs to receive click event
+    [self.view addSubview:familyTreeView];
 
-    HeritageModel *model = [[HeritageModel alloc] init];
+    PersonModel *model = [[PersonModel alloc] init];
     model.name = @"Laurence Chavis";
     //......
-    heritageView.model = model;     //the heritage tree will be built after setting model
+    familyTreeView.model = model;     //the family tree will be built after setting model
 
     //The more intelligent way should be adopted to convert JSON to Model instead of creating models manually.
     //In demo project, class ExampleData/ExampleDataParser.m provides an example for using YYModel to convert JSON data.
 ```
 
 ### Working with Xib or Storyboard(Optional)
-It's very easy to do that. Just add a UIView into XIB or Storyboard, and set the view class to `HeritageView`. And then bind it to a property in source code like:   
-`@property(nonatomic,weak) IBOutlet HeritageView *heritageView;`
+It's very easy to do that. Just add a UIView into XIB or Storyboard, and set the view class to `FamilyTreeView`. And then bind it to a property in source code like:   
+`@property(nonatomic,weak) IBOutlet FamilyTreeView *familyTreeView;`
 
 ### Preparing data
-The class `HeritageModel` defines person's information, and relations between the person and his/her mates and children. A low efficient but clear demonstration for building Laurence Chavis's family heritage tree:
+The class `PersonModel` defines person's information, and relations between the person and his/her mates and children. A low efficient but clear demonstration for building Laurence Chavis's family tree:
 ```objective-c
-    HeritageModel *father = [[HeritageModel alloc] init];
+    PersonModel *father = [[PersonModel alloc] init];
     father.personId = @"d3k4fc";
     father.name = @"Laurence Chavis";
     father.gender = male;
     father.birthday = @"1/25/1935";
     father.portraitUrl = @"http://www.xxxx.com/images/d3k4fc_thumb.png";
     
-    HeritageModel *mother = [[HeritageModel alloc] init];
+    PersonModel *mother = [[PersonModel alloc] init];
     mother.personId = @"j8y6hd";
     mother.name = @"Myra Richards";
     mother.gender = female;
     mother.birthday = @"2/12/1930";
     
-    HeritageModel *son = [[HeritageModel alloc] init];
+    PersonModel *son = [[PersonModel alloc] init];
     son.personId = @"ji9ke7";
     son.name = @"Larry Chavis";
     son.gender = male;
@@ -57,30 +57,30 @@ The class `HeritageModel` defines person's information, and relations between th
     mother.children = @[son];
     father.mates = @[mother];
     
-    self.heritageView.model = father;
+    self.familyTreeView.model = father;
 ```
-An **efficient** way to parse JSON to HeritageModel is provide in Demo project:   
-[Example data parsing](https://github.com/chenyun122/HeritageView/tree/master/HeritageViewDemo/ExampleData) 
+An **efficient** way to parse JSON to PersonModel is provide in Demo project:   
+[Example data parsing](https://github.com/chenyun122/FamilyTreeView/tree/master/FamilyTreeViewDemo/ExampleData) 
 
 ### Customization
 A few public properties are provided to customize the person's view:
 ```objective-c
-    self.heritageView.textColor = UIColor.whiteColor;
-    self.heritageView.personViewBackgroundColor = UIColor.redColor;
-    self.heritageView.femaleBorderColor = UIColor.yellowColor;
-    self.heritageView.maleBorderColor = UIColor.greenColor;
+    self.familyTreeView.textColor = UIColor.whiteColor;
+    self.familyTreeView.personViewBackgroundColor = UIColor.redColor;
+    self.familyTreeView.femaleBorderColor = UIColor.yellowColor;
+    self.familyTreeView.maleBorderColor = UIColor.greenColor;
 ```
 Feel free to modify the source code to make it suitable for you. Alternatively, submit an issue to let me know what customization you need.
 
 ### Handling event
 The delegate implements follow method to handle event:
 ```objective-c
-#pragma mark - Heritage View Delegate
-- (void)personDidClick:(HeritageModel *)model {
+#pragma mark - FamilyTree View Delegate
+- (void)personDidClick:(PersonModel *)model {
     NSLog(@"Person %@ did click",model.name);
 }
 ```
 
 ## License
-HeritageView is released under the MIT license. See LICENSE for details.
+FamilyTreeView is released under the MIT license. See LICENSE for details.
 

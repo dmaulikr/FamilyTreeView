@@ -1,6 +1,6 @@
 //
 //  PersonView.m
-//  HeritageView
+//  FamilyTreeView
 //
 //  Created by Yun Chen on 2017/7/29.
 //  Copyright © 2017 ChenYun. All rights reserved.
@@ -82,7 +82,7 @@ static const CGFloat kLabelWidth = 108.0;
     }
 }
 
-- (void)setModel:(HeritageModel *)model {
+- (void)setModel:(PersonModel *)model {
     _model = model;
     
     self.nameLabel.text = model.name;
